@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_warm"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dashboard_hero"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:contentDescription="Logo SmartBK"
+                    android:src="@drawable/ic_counselor_logo" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SmartBK"
+                        android:textColor="@android:color/white"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtRoleLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_role_chip"
+                        android:paddingStart="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="12dp"
+                        android:paddingBottom="5dp"
+                        android:text="Guru BK"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ruang layanan konseling sekolah"
+                        android:textColor="@android:color/white"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Pantau siswa, konseling, absensi, pelanggaran, surat, dan home visit dalam satu dashboard."
+                        android:textColor="#EAF5FF"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="122dp"
+                    android:layout_height="92dp"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="Ilustrasi konseling"
+                    android:src="@drawable/illustration_counseling" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuSearch"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_search_cta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp">
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/bg_menu_icon"
+                    android:contentDescription="Ikon pencarian"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_menu_search" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pencarian Global"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cari siswa, absensi, surat, dan riwayat"
+                        android:textColor="#EAF5FF"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Buka pencarian"
+                    android:src="@drawable/ic_arrow_right" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Ringkasan Data"
+            android:textColor="@color/text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:columnCount="2"
+            android:useDefaultMargins="false">
+
+            <TextView
+                android:id="@+id/txtJumlahSiswa"
+                android:layout_width="0dp"
+                android:layout_height="78dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_soft_panel"
+                android:gravity="center"
+                android:text="Siswa\n0"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtJumlahKonseling"
+                android:layout_width="0dp"
+                android:layout_height="78dp"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_soft_panel"
+                android:gravity="center"
+                android:text="Konseling\n0"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtJumlahPelanggaran"
+                android:layout_width="0dp"
+                android:layout_height="78dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bg_soft_panel"
+                android:gravity="center"
+                android:text="Pelanggaran\n0"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtJumlahHomeVisit"
+                android:layout_width="0dp"
+                android:layout_height="78dp"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bg_soft_panel"
+                android:gravity="center"
+                android:text="Home Visit\n0"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_photo_card"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+            <ImageView
+                android:layout_width="118dp"
+                android:layout_height="92dp"
+                android:contentDescription="Gambar guru konselor"
+                android:src="@drawable/illustration_counseling" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kolaborasi layanan BK"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Guru BK, wali kelas, dan kepala sekolah dapat melihat data sesuai peran masing-masing."
+                    android:textColor="@color/text_gray"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Menu Layanan"
+            android:textColor="@color/text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:columnCount="2">
+
+            <LinearLayout
+                android:id="@+id/menuAbsensi"
+                style="@style/MenuCardStyle">
+                <ImageView style="@style/MenuIconStyle" android:contentDescription="Ikon absensi" android:src="@drawable/ic_menu_absensi" />
+                <TextView style="@style/MenuTitleStyle" android:text="Absensi" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuKonseling"
+                style="@style/MenuCardStyle">
+                <ImageView style="@style/MenuIconStyle" android:contentDescription="Ikon konseling" android:src="@drawable/ic_menu_konseling" />
+                <TextView style="@style/MenuTitleStyle" android:text="Konseling" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuPelanggaran"
+                style="@style/MenuCardStyle">
+                <ImageView style="@style/MenuIconStyle" android:contentDescription="Ikon pelanggaran" android:src="@drawable/ic_menu_pelanggaran" />
+                <TextView style="@style/MenuTitleStyle" android:text="Pelanggaran" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuHomeVisit"
+                style="@style/MenuCardStyle">
+                <ImageView style="@style/MenuIconStyle" android:contentDescription="Ikon home visit" android:src="@drawable/ic_menu_home_visit" />
+                <TextView style="@style/MenuTitleStyle" android:text="Home Visit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuSurat"
+                style="@style/MenuCardStyle">
+                <ImageView style="@style/MenuIconStyle" android:contentDescription="Ikon surat" android:src="@drawable/ic_menu_surat" />
+                <TextView style="@style/MenuTitleStyle" android:text="Surat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuDataSiswa"
+                style="@style/MenuCardStyle">
+                <ImageView style="@style/MenuIconStyle" android:contentDescription="Ikon data siswa" android:src="@drawable/ic_menu_data_siswa" />
+                <TextView style="@style/MenuTitleStyle" android:text="Data Siswa" />
+            </LinearLayout>
+
+        </GridLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Riwayat dan Rekap"
+            android:textColor="@color/text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout android:id="@+id/menuRiwayatSurat" style="@style/RowMenuStyle">
+            <ImageView style="@style/RowIconStyle" android:contentDescription="Ikon riwayat surat" android:src="@drawable/ic_menu_surat" />
+            <TextView style="@style/RowTitleStyle" android:text="Riwayat Surat" />
+            <ImageView style="@style/RowArrowStyle" android:contentDescription="Buka riwayat surat" android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/menuRiwayatAbsensi" style="@style/RowMenuStyle">
+            <ImageView style="@style/RowIconStyle" android:contentDescription="Ikon riwayat absensi" android:src="@drawable/ic_menu_absensi" />
+            <TextView style="@style/RowTitleStyle" android:text="Riwayat Absensi" />
+            <ImageView style="@style/RowArrowStyle" android:contentDescription="Buka riwayat absensi" android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/menuRekapAbsensi" style="@style/RowMenuStyle">
+            <ImageView style="@style/RowIconStyle" android:contentDescription="Ikon rekap absensi" android:src="@drawable/ic_menu_rekap" />
+            <TextView style="@style/RowTitleStyle" android:text="Rekap Absensi" />
+            <ImageView style="@style/RowArrowStyle" android:contentDescription="Buka rekap absensi" android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/menuRekapPelanggaran" style="@style/RowMenuStyle">
+            <ImageView style="@style/RowIconStyle" android:contentDescription="Ikon rekap pelanggaran" android:src="@drawable/ic_menu_rekap" />
+            <TextView style="@style/RowTitleStyle" android:text="Rekap Pelanggaran" />
+            <ImageView style="@style/RowArrowStyle" android:contentDescription="Buka rekap pelanggaran" android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuRiwayatHomeVisit"
+            style="@style/RowMenuStyle">
+            <ImageView style="@style/RowIconStyle" android:contentDescription="Ikon riwayat home visit" android:src="@drawable/ic_menu_home_visit" />
+            <TextView style="@style/RowTitleStyle" android:text="Riwayat Home Visit" />
+            <ImageView style="@style/RowArrowStyle" android:contentDescription="Buka riwayat home visit" android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuAkun"
+            style="@style/RowMenuStyle"
+            android:layout_marginBottom="18dp">
+            <ImageView style="@style/RowIconStyle" android:contentDescription="Ikon setting" android:src="@drawable/ic_menu_settings" />
+            <TextView style="@style/RowTitleStyle" android:text="Setting" />
+            <ImageView style="@style/RowArrowStyle" android:contentDescription="Buka setting" android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

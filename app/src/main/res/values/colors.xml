@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#F3F8FF</color>
+
+    <color name="card">#FFFFFF</color>
+
+    <color name="primary">#2C7BE5</color>
+
+    <color name="primary_dark">#244B8F</color>
+    <color name="primary_light">#D8E9FF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="border">#D6E4F4</color>
+    <color name="success">#2F7D63</color>
+    <color name="accent">#15A6A6</color>
+    <color name="accent_light">#DDF7F3</color>
+    <color name="warm_panel">#5EA8FF</color>
+    <color name="warm_panel_dark">#244B8F</color>
+
+    <!-- FIX YANG ERROR -->
+    <color name="text">#16233C</color>
+    <color name="text_dark">#16233C</color>
+    <color name="text_gray">#64748B</color>
+    <color name="sun">#FFD166</color>
+    <color name="coral">#FF7A7A</color>
+
+</resources>

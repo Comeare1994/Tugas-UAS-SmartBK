@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_warm"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_page_header"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="18dp">
+
+        <ImageView
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:contentDescription="Ikon riwayat absensi"
+            android:src="@drawable/ic_menu_absensi" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Riwayat Absensi"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Filter absensi berdasarkan nama dan bulan"
+                android:textColor="#EAF5FF"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/PageSectionTitleStyle"
+        android:layout_marginTop="22dp"
+        android:text="Filter Data" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/card_bg"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etFilterNama"
+            style="@style/FormInputStyle"
+            android:hint="Cari Nama Siswa"/>
+
+        <Spinner
+            android:id="@+id/spinnerBulan"
+            style="@style/FormSpinnerStyle"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/PageSectionTitleStyle"
+        android:layout_marginTop="18dp"
+        android:text="Daftar Riwayat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_bg"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ListView
+            android:id="@+id/listAbsensi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_list_surface"
+            android:divider="@color/border"
+            android:dividerHeight="1dp"
+            android:padding="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

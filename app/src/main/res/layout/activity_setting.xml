@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_warm"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_page_header"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imgAdminProfile"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/bg_profile_avatar"
+                android:contentDescription="Foto profil admin"
+                android:padding="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_counselor_logo" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtGuruNamePreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Setting Admin"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtGuruRolePreview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_role_chip"
+                    android:paddingStart="12dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="5dp"
+                    android:text="Biodata dan akun"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/card_bg"
+            android:elevation="3dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                style="@style/PageSectionTitleStyle"
+                android:text="Profil Admin" />
+
+            <Button
+                android:id="@+id/btnPilihFoto"
+                style="@style/SecondaryButtonStyle"
+                android:layout_marginTop="12dp"
+                android:text="Pilih Foto Profil" />
+
+            <TextView
+                style="@style/PageSectionTitleStyle"
+                android:layout_marginTop="20dp"
+                android:text="Biodata Guru" />
+
+            <EditText
+                android:id="@+id/etNamaGuru"
+                style="@style/FormInputStyle"
+                android:layout_marginTop="12dp"
+                android:hint="Nama guru"
+                android:inputType="textPersonName" />
+
+            <Spinner
+                android:id="@+id/spinnerJabatanGuru"
+                style="@style/FormSpinnerStyle"
+                android:layout_marginTop="12dp" />
+
+            <Button
+                android:id="@+id/btnSimpanBiodata"
+                style="@style/PrimaryButtonStyle"
+                android:layout_marginTop="16dp"
+                android:text="Simpan Biodata" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuKelolaAkun"
+            style="@style/RowMenuStyle"
+            android:layout_marginTop="16dp">
+            <ImageView style="@style/RowIconStyle" android:contentDescription="Ikon kelola akun" android:src="@drawable/ic_counselor_logo" />
+            <TextView style="@style/RowTitleStyle" android:text="Kelola Akun Login" />
+            <ImageView style="@style/RowArrowStyle" android:contentDescription="Buka kelola akun" android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuLogout"
+            style="@style/RowMenuStyle"
+            android:layout_marginBottom="18dp">
+            <ImageView style="@style/RowIconStyle" android:contentDescription="Ikon logout" android:src="@drawable/ic_arrow_right" />
+            <TextView style="@style/RowTitleStyle" android:text="Log Out" />
+            <ImageView style="@style/RowArrowStyle" android:contentDescription="Keluar aplikasi" android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

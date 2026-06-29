@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_warm"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_page_header"
+            android:elevation="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="18dp">
+
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:contentDescription="Ikon surat pernyataan"
+                android:src="@drawable/ic_assignment" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Surat Pernyataan"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Form pernyataan siswa"
+                    android:textColor="#EAF5FF"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/PageSectionTitleStyle"
+            android:layout_marginTop="22dp"
+            android:text="Data Surat" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_bg"
+            android:elevation="3dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <EditText
+                android:id="@+id/etNama"
+                style="@style/FormInputStyle"
+                android:hint="Nama Siswa"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etKelas"
+                style="@style/FormInputStyle"
+                android:layout_marginTop="12dp"
+                android:hint="Kelas"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etPernyataan"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_input_field"
+                android:gravity="top"
+                android:hint="Isi Pernyataan"
+                android:inputType="textMultiLine"
+                android:padding="14dp"
+                android:textColor="@color/text"
+                android:textColorHint="@color/text_gray" />
+
+            <EditText
+                android:id="@+id/etTanggal"
+                style="@style/FormInputStyle"
+                android:layout_marginTop="12dp"
+                android:hint="Tanggal"
+                android:inputType="date" />
+
+            <Button
+                android:id="@+id/btnSimpan"
+                style="@style/PrimaryButtonStyle"
+                android:layout_marginTop="16dp"
+                android:text="Buat Surat" />
+
+            <TextView
+                android:id="@+id/tvHasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_list_surface"
+                android:padding="14dp"
+                android:textColor="@color/text"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnExportPdf"
+                style="@style/SecondaryButtonStyle"
+                android:layout_marginTop="12dp"
+                android:text="Export PDF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
